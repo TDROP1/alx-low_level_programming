@@ -12,6 +12,7 @@ int main(void)
 	while (low <= 122)
 	{
 		if (low == 101 || low == 113)
+			low++; /*means go to next value 102 and 114 respectively*/
 			continue;
 		putchar(low);
 		low++;
