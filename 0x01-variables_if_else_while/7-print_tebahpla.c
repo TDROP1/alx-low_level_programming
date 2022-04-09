@@ -9,7 +9,7 @@ int main(void)
 {
 	int low = 122;
 
-	while (low >= 97) 
+	while (low >= 97)/*z to a*/ 
 	{
 		putchar(low);
 		low--;
