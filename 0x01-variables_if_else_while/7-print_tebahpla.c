@@ -7,6 +7,8 @@
  */
 int main(void)
 {
+	int low = 122;
+
 	while (low >= 65)
 	{
 		putchar(low);
