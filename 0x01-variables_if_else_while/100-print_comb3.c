@@ -10,7 +10,6 @@ int main(void)
 {
 	int x = 48, y = 48, limit = 58;
 
-
 	while (x >= 48)
 	{
 		while (y < limit)
@@ -19,8 +18,11 @@ int main(void)
 			{
 				putchar(x);
 				putchar(y);
+				if (x + y != 113)
+				{
 				putchar(',');
 				putchar(' ');
+				}
 			}
 			y++;
 		}
@@ -29,7 +31,7 @@ int main(void)
 			y = 48;
 			x++;
 		}
-		if (x > limit-1)
+		if (x > limit - 1)
 		{
 			break;
 		}
