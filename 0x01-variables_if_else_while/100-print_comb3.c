@@ -15,7 +15,7 @@ int main(void)
 	{
 		while (y < limit)
 		{
-			if (y <= x)
+			if (x < y)
 			{
 				putchar(x);
 				putchar(y);
