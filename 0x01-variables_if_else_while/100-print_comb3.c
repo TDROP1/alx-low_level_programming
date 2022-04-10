@@ -8,37 +8,30 @@
 
 int main(void)
 {
-	int x = 48, y = 48;
+	int x = 48, y = 48, limit = 58;
 
-	while (x < 58)
+
+	while (x >= 48)
 	{
-		if (x <= y)
+		while (y < limit)
 		{
-			while (x >= y)
+			if (y <= x)
 			{
-				if (y <= x)
-				{
-					y++;
-					continue;
-				}
-				else if (y > x)
-				{
-					putchar(x);
-					putchar(y);
-					putchar(',');
-					putchar(' ');
-					y++;
-				}
+				putchar(x);
+				putchar(y);
+				putchar(',');
+				putchar(' ');
 			}
+			y++;
 		}
-		if (y == 58)
+		if (y == limit)
 		{
 			y = 48;
 			x++;
 		}
-		if (x > y)
+		if (x > limit-1)
 		{
-			y++;
+			break;
 		}
 	}
 	return (0);
