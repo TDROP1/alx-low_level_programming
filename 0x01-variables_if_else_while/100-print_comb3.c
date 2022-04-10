@@ -33,6 +33,7 @@ int main(void)
 		}
 		if (x > limit - 1)
 		{
+			putchar(' ');
 			break;
 		}
 	}
