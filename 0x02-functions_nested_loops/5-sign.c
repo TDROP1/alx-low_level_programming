@@ -8,20 +8,22 @@
  */
 int print_sign(int n)
 {
+	int result;
 	/*for positives*/
 	if (n > 0)
-	{
+	{	
+		result = 1;
 		_putchar('+');
-		return (1);
 	}
 	else if (n == 0)
 	{
+		result = 0;
 		_putchar('0');
-		return (0);
 	}
 	else if (n < 0)
 	{
+		result = -1;
 		_putchar('-');
-		return (-1);
 	}
+	return (result);
 }
