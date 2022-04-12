@@ -12,7 +12,7 @@ void print_alphabet(void)
 	while (letter < 123)
 	{
 		_putchar(letter);
-		_putchar('\n');
 		letter++;
 	}
+	_putchar('\n');
 }
