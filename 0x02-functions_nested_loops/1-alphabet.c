@@ -5,7 +5,7 @@
  * Description: print lowercase alphabets
  * Return: void (nothing)
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	int letter = 97;
 
