@@ -13,10 +13,10 @@ int _islower(int c)/*c is a parameter of the function*/
 	/*check if its lowercase or not*/
 	while (range < 123)
 	{
-		if (c == range)
+		if (c < 123 && c > 96)
 			return (1);
 		/*if c  exceed 'z' -122 and or is  less than 'a' -97 on the ASCII output 0*/
-		else if (c > 122 || c < 97)
+		else
 			return (0);
 		range++;
 	}
