@@ -14,7 +14,7 @@ void print_alphabet_x10(void)
 		/*while loop for the alphabets in a sequence*/
 		while (letter < 123)
 		{
-			_putchar(letter)
+			_putchar(letter);
 			/*increment letter*/
 			letter++;
 		}
@@ -23,7 +23,7 @@ void print_alphabet_x10(void)
 		/*increment lines*/
 		lines++;
 		/*reset the letters value back to 97 */
-		letters = 97;
+		letter = 97;
 	}
 
 }
