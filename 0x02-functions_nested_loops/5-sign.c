@@ -11,7 +11,7 @@ int print_sign(int n)
 	int result;
 	/*for positives*/
 	if (n > 0)
-	{	
+	{
 		result = 1;
 		_putchar('+');
 	}
