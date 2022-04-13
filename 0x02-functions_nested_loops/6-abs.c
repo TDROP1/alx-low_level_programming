@@ -4,7 +4,7 @@
  *_abs -Entry point
  *Description: program calculates the absolute value
  *@n: parameter
- *Return: Absolute value of parameter 
+ *Return: Absolute value of parameter
  */
 int _abs(int n)
 {
