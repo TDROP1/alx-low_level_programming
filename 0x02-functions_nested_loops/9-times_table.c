@@ -23,7 +23,6 @@ void times_table(void)
 			{
 				_putchar (' ');
 				_putchar('0' + prod);
-				
 			}
 			else
 			{
@@ -35,9 +34,9 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			_putchar('\n');
 			multi++;
 		}
+		_putchar('\n');
 		num++;
 	}
 }
