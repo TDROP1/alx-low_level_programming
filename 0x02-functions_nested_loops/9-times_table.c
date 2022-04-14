@@ -6,42 +6,38 @@
  */
 void times_table(void)
 {
-	int num = 0;/*must increase by 1 and stop at 9*/
-	int multiplier;
-	int prod;
+	int num = 0;
+	int multi, product;
 
 	while (num <= 9)
 	{
-		multiplier = 0;
-		while (multiplier <= 9)
+		multi =0;
+		while (multi <= 9)
 		{
-			prod = num * multiplier;
-			if (prod >= 10)
+			prod = num * prod;
+			if (prod == 0)
 			{
-				_putchar('0' + prod / 10);/*tens*/
-				_putchar('0' + prod % 10);/*units*/
-				if (multiplier < 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+				_putchar('0' + prod);
 			}
 			else if (prod < 10)
 			{
-				_putchar('0' + prod % 10);
-				if (multiplier < 9)
-					_putchar(',');
-				if (num * (multiplier + 1) >= 10)
-					_putchar(' ');
-				else
-				{
-					_putchar(' ');
-					_putchar(' ');
-				}
+				_putchar (' ');
+				_putchar('0' + prod);
+				
 			}
-			multiplier++;
+			else
+			{
+				_putchar('0' + prod / 10);
+				_putchar('0' + prod % 10);
+			}
+			if (multi < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			_putchar('\n');
+			multi++;
 		}
-		_putchar('\n');
 		num++;
-}
+	}
 }
