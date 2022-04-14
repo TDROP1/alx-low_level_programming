@@ -7,43 +7,29 @@
  */
 
 void jack_bauer(void)
-{	/*format of times Hh:Mm*/
-	int H = 48, h = 48, M = 48, m = 48;
-	/*whileloop for the H in the format which ends at 2 with ascii 50*/
-	while (H <= 50)
+{
+	int H = 0, h = 0, M = 0, m = 0;
+
+	while (H <= 2)
 	{
-		/*while for h in the format ends at 9 ,so that Hh reachs 24*/
-		while (h <= 57)
+		while (h <= 9)
 		{
-			/*if Hh does not exceed 23 then print the following*/
-			if (H != 51 && h < 52)
+			if (H <= 2 && h <= 3)
 			{
-				/*in the format ,M cannot exceed 5 since minutes end at Hh:59*/
-				while (M <= 53)
+				while (M <= 5)
 				{
-					while (m <= 57)
+					while (m <= 9)
 					{
-						_putchar(H);
-						_putchar(h);
-						_putchar(':');
-						_putchar(M);
-						_putchar(m);
-						_putchar('\n');
 						m++;
 					}
-					m = 48;/*reset the minutes to 0(ascii 48) for m and increment M*/
+					m = 0;
 					M++;
 				}
 			}
-			M = 48;
-			/*increment the h*/
+			M = 0;
 			h++;
 		}
-		/*increment H*/
+		h = 0;
 		H++;
-		/*as H increase ,reset h to 0 (ascii 48)*/
-		h = 48;
 	}
-
-
 }
