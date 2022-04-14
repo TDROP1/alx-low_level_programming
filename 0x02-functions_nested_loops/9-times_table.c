@@ -15,7 +15,6 @@ void times_table(void)
 	while (num <= 9)
 	{
 		multiplier = 0;
-
 		while (multiplier <= 9)
 		{
 			prod = num * multiplier;
@@ -28,9 +27,17 @@ void times_table(void)
 					_putchar(',');
 					_putchar(' ');
 				}
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+			}
+			else
+			{
+				_putchar('0' + prod);
+				if (multiplier < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+			}
 			/*increment multiplier*/
 			multiplier++;
 		}
