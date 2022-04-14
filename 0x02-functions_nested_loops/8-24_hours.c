@@ -6,12 +6,12 @@
  *Return: void
  */
 
-int jack_bauer(void)
+void jack_bauer(void)
 {
 	/*clock format is Hh:Mm*/
-	int H = 0, h = 0, M =0 , m = 0;
+	int H = 0, h = 0, M = 0, m = 0;
 	int hand = 9;
-	
+
 	while (H <= 2)
 	{
 		if (H == 2)
