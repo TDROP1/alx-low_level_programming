@@ -7,37 +7,43 @@
  */
 
 void jack_bauer(void)
-{
-	int hours = 0;
-	int minutes = 0;
-
-	while (hours < 24)
+{	/*format of times Hh:Mm*/
+	int H = 48, h = 48, M = 48, m = 48;
+	/*whileloop for the H in the format which ends at 2 with ascii 50*/
+	while (H <= 50)
 	{
-		/*output the tens of the hours 00 to 23*/
-		/*if the hours are less than 10 output 01-09*/
-		if (hours < 10)
+		/*while for h in the format ends at 9 ,so that Hh reachs 24*/
+		while (h <= 57)
 		{
-			_putchar('0');
-		}
-		_putchar(hours);
-
-		while (minutes < 60)
-		{
-			_putchar(':');
-			if (minutes < 10)
+			/*if Hh does not exceed 23 then print the following*/
+			if (H != 51 && h < 52)
 			{
-				_putchar ('0');
+				/*in the format ,M cannot exceed 5 since minutes end at Hh:59*/
+				while (M <= 53)
+				{
+					while (m <= 57)
+					{
+						_putchar(H);
+						_putchar(h);
+						_putchar(':');
+						_putchar(M);
+						_putchar(m);
+						_putchar('\n');
+						m++;
+					}
+					m = 48;/*reset the minutes to 0(ascii 48) for m and increment M*/
+					M++;
+				}
 			}
-			_putchar(minutes);
-			minutes++;
-
+			M = 48;
+			/*increment the h*/
+			h++;
 		}
-		_putchar('\n');
-		if (minutes >= 60)
-		{
-			hours++;
-			minutes = 0;
-		}
+		/*increment H*/
+		H++;
+		/*as H increase ,reset h to 0 (ascii 48)*/
+		h = 48;
 	}
+
 
 }
