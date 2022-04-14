@@ -10,6 +10,5 @@ int main(void)
 	int i = 0;
 
 	positive_or_negative(i);
-	printf("print after the test case 0\n");
 	return (0);
 }
