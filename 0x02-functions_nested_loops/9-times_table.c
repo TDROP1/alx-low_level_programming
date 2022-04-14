@@ -18,24 +18,30 @@ void times_table(void)
 		while (multiplier <= 9)
 		{
 			prod = num * multiplier;
-			if (prod > 9 && prod < 100)
+			if (prod >= 10)
 			{
-				_putchar('0' + prod / 10);
-				_putchar('0' + prod % 10);
+				_putchar('0' + prod / 10);/*tens*/
+				_putchar('0' + prod % 10);/*units*/
 				if (multiplier < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
 				}
 			}
-			else
+			else if (prod < 10)
 			{
-				_putchar('0' + prod);
+				_putchar('0' + prod % 0);
 				if (multiplier < 9)
 				{
 					_putchar(',');
+				}
+				if (num *(multiplier + 1) >= 10)	
+					_putchar(' ');
+				else 
+				{
 					_putchar(' ');
 					_putchar(' ');
+
 				}
 			}
 			/*increment multiplier*/
@@ -44,5 +50,5 @@ void times_table(void)
 		_putchar('\n');
 		/*increment the num by 1*/
 		num++;
-	}
+}
 }
