@@ -15,7 +15,7 @@ void times_table(void)
 		while (multi <= 9)
 		{
 			prod = num * multi;
-			if (prod == 0)
+			if (multi == 0)
 			{
 				_putchar('0' + prod);
 			}
