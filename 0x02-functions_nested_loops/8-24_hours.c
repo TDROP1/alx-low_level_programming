@@ -9,33 +9,36 @@
 void jack_bauer(void)
 {
 	/*clock format is Hh:Mm*/
-	int H = 0, h = 0, M = 0, m = 0;
-	int hand = 9;
+	int h1 = 0, h2, m1, m2;
+	int limit = 9;
 
-	while (H <= 2)
+	while (h1 <= 2)
 	{
-		if (H == 2)
+		if (h1 == 2)
 		{
-			hand = 3;
+			limit = 3;
 		}
-		while (h <= hand)
+		h2 = 0;
+		while (h2 <= limit)
 		{
-			while (M <= 5)
+			m1 = 0;
+			while (m1 <= 5)
 			{
-				while (m <= 9)
+				m2 = 0;
+				while (m2 <= 9)
 				{
-					_putchar('0' + H);
-					_putchar('0' + h);
+					_putchar('0' + h1);
+					_putchar('0' + h2);
 					_putchar(':');
-					_putchar('0' + M);
-					_putchar('0' + m);
+					_putchar('0' + m1);
+					_putchar('0' + m2);
 					_putchar('\n');
-					m++;
+					m2++;
 				}
-				M++;
+				m1++;
 			}
-			h++;
+			h2++;
 		}
-		H++;
+		h1++;
 	}
 }
