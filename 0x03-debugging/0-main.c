@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * main -Entry point
- * Description:test the case 0 if it will return positive or negative
  * Return: Always 0
  */
 
