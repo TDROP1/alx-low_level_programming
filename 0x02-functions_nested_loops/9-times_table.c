@@ -7,14 +7,14 @@
 void times_table(void)
 {
 	int num = 0;
-	int multi, product;
+	int multi, prod;
 
 	while (num <= 9)
 	{
-		multi =0;
+		multi = 0;
 		while (multi <= 9)
 		{
-			prod = num * prod;
+			prod = num * multi;
 			if (prod == 0)
 			{
 				_putchar('0' + prod);
