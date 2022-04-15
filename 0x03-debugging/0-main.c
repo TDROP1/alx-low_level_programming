@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * main - tests function for positive or negative integers
- * Return: 0
+ * main -Entry point
+ * Description: test for positive of negative sign
+ * Return: 0(success)
  */
-
 int main(void)
 {
 	int i;
